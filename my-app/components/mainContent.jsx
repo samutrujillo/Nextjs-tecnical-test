@@ -24,7 +24,10 @@ const MainContent = () => {
                         <img className="fluid-image mx-4 cursor-pointer" src={item} alt></img>
                     ))}
                 </div>
+                
             </section>
+            
+            
         </>
     )
 }
