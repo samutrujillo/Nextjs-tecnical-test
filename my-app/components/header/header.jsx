@@ -14,10 +14,10 @@ import Button from 'react-bootstrap/Button';
 const Header = () => {
     return (
         <>
-            <Row>
+            <Row className='bg-light w-100' style={{position:'fixed'}}>
                 <Col md={6} className="bg-ligth">
                     <Navbar className='' expand="lg">
-                        <Image className='m-1 p-1 cursor-pointer' style={{ width: '10rem', height: 'auto' }} src={require('../../assets/images/PFS.png')}></Image>
+                        <Image className='m-1 p-1 cursor' style={{ width: '10rem', height: 'auto' }} src={require('../../assets/images/PFS.png')}></Image>
                         <Container style={{ padding: '10px 30px 11px 3px' }}>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">

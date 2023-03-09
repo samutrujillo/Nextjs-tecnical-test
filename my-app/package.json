@@ -17,7 +17,12 @@
     "next": "13.2.3",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.2",
+    "react-card-slider-component": "^1.0.9",
     "react-dom": "18.2.0",
-    "sass": "^1.58.3"
+    "react-icons": "^4.8.0",
+    "react-slick": "^0.29.0",
+    "react-slideshow-image": "^4.2.1",
+    "sass": "^1.58.3",
+    "slick-carousel": "^1.8.1"
   }
 }
