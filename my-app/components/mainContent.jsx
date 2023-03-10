@@ -25,13 +25,14 @@ const MainContent = () => {
     }
       
     const infoSlides = [
-        {image:"https://picsum.photos/200/300",title:"This is a title",description:"This is a description",clickEvent:handleShow},
-        {image:"https://picsum.photos/600/500",title:"This is a second title",description:"This is a second description",clickEvent:sliderClick},
-        {image:"https://picsum.photos/700/600",title:"This is a third title",description:"This is a third description",clickEvent:sliderClick},
-        {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description",clickEvent:sliderClick},
-        {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description",clickEvent:sliderClick},
-        {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description",clickEvent:sliderClick},
-        {image:"https://picsum.photos/300/400",title:"This is a seventh title",description:"This is a seventh description",clickEvent:sliderClick},
+        {image:"https://pfsrealty.com/wp-content/uploads/2023/01/Silverland-4.png",clickEvent:handleShow},
+        {image:"https://pfsrealty.com/wp-content/uploads/2023/01/1.png",clickEvent:sliderClick},
+        {image:"https://pfsrealty.com/wp-content/uploads/2023/01/Shoma-Bay-Exterior-with-Logo-scaled.webp",clickEvent:sliderClick},
+        {image:"https://pfsrealty.com/wp-content/uploads/2022/12/1.-Oasis-Entrance-scaled.webp",clickEvent:sliderClick},
+        {image:"https://pfsrealty.com/wp-content/uploads/2022/12/1.png",clickEvent:sliderClick},
+        {image:"https://pfsrealty.com/wp-content/uploads/2022/12/Pool-Shot-2.jpeg",clickEvent:sliderClick},
+        {image:"https://pfsrealty.com/wp-content/uploads/2022/10/79323-Centris-Brochure-10-21-22-25-jpg.webp",clickEvent:sliderClick},
+        {image:"https://pfsrealty.com/wp-content/uploads/2022/10/519931666283904-jpg.webp",clickEvent:sliderClick}
     ]
 
     return (
@@ -51,7 +52,7 @@ const MainContent = () => {
                 </div>
             </section>
             <div className='w-100 d-flex justify-content-center align-items-center'>
-                <Carousel slides={infoSlides} customStylesForSlides={'mx-2'} mainCustomStylesForSliderContainer={'w-75 mx-5 my-4 cursor-pointer'}></Carousel>
+                <Carousel slides={infoSlides} customStylesForSlides={'mx-2 h-100'} mainCustomStylesForSliderContainer={'w-75 mx-5 my-4 cursor-pointer'}></Carousel>
 
             </div>
             <Modal show={show} onHide={handleClose}>
