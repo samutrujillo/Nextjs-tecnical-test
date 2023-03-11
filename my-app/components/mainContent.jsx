@@ -26,18 +26,18 @@ const MainContent = () => {
 
     const infoSlides = [
         { image: "https://pfsrealty.com/wp-content/uploads/2023/01/Silverland-4.png", clickEvent: handleShow },
-        { image: "https://pfsrealty.com/wp-content/uploads/2023/01/1.png", clickEvent: sliderClick },
-        { image: "https://pfsrealty.com/wp-content/uploads/2023/01/Shoma-Bay-Exterior-with-Logo-scaled.webp", clickEvent: sliderClick },
-        { image: "https://pfsrealty.com/wp-content/uploads/2022/12/1.-Oasis-Entrance-scaled.webp", clickEvent: sliderClick },
-        { image: "https://pfsrealty.com/wp-content/uploads/2022/12/1.png", clickEvent: sliderClick },
-        { image: "https://pfsrealty.com/wp-content/uploads/2022/12/Pool-Shot-2.jpeg", clickEvent: sliderClick },
-        { image: "https://pfsrealty.com/wp-content/uploads/2022/10/79323-Centris-Brochure-10-21-22-25-jpg.webp", clickEvent: sliderClick },
-        { image: "https://pfsrealty.com/wp-content/uploads/2022/10/519931666283904-jpg.webp", clickEvent: sliderClick }
+        { image: "https://pfsrealty.com/wp-content/uploads/2023/01/1.png", clickEvent: handleShow },
+        { image: "https://pfsrealty.com/wp-content/uploads/2023/01/Shoma-Bay-Exterior-with-Logo-scaled.webp", clickEvent: handleShow },
+        { image: "https://pfsrealty.com/wp-content/uploads/2022/12/1.-Oasis-Entrance-scaled.webp", clickEvent: handleShow },
+        { image: "https://pfsrealty.com/wp-content/uploads/2022/12/1.png", clickEvent: handleShow },
+        { image: "https://pfsrealty.com/wp-content/uploads/2022/12/Pool-Shot-2.jpeg", clickEvent: handleShow },
+        { image: "https://pfsrealty.com/wp-content/uploads/2022/10/79323-Centris-Brochure-10-21-22-25-jpg.webp", clickEvent: handleShow },
+        { image: "https://pfsrealty.com/wp-content/uploads/2022/10/519931666283904-jpg.webp", clickEvent: handleShow }
     ]
 
     const infoSlides2 = [
         { image: "https://pfsrealty.com/wp-content/uploads/2023/03/15-03-23-INVT-WEB-MADRID.png", clickEvent: handleShow },
-        { image: "https://pfsrealty.com/wp-content/uploads/2023/02/23-FEB-MED.png", clickEvent: sliderClick },
+        { image: "https://pfsrealty.com/wp-content/uploads/2023/02/23-FEB-MED.png", clickEvent: handleShow },
     ]
 
     return (
@@ -72,15 +72,12 @@ const MainContent = () => {
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Pagina Prototipo</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>Esta es una pagina Prototipo!</Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>
-                            Close
-                        </Button>
                         <Button variant="primary" onClick={handleClose}>
-                            Save Changes
+                            Close
                         </Button>
                     </Modal.Footer>
                 </Modal>
