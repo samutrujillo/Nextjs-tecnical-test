@@ -1,12 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
+import {Container, Row, Col, Nav, Navbar, NavDropdown, Button} from 'react-bootstrap'
 
 
 
@@ -69,7 +63,7 @@ const Header = () => {
                                     <Nav.Link href="#contactenos">CONTÁCTENOS</Nav.Link>
 
                                     <Button style={{ background: '#f9097d', border: 'none', borderRadius: '2rem', width: '6rem' }}>Login</Button>{' '}
-
+                                    
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
