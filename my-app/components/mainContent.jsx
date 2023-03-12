@@ -37,10 +37,7 @@ const MainContent = () => {
         { image: "https://pfsrealty.com/wp-content/uploads/2022/10/519931666283904-jpg.webp", clickEvent: handleShow }
     ]
 
-    const infoSlides2 = [
-        { image: "https://pfsrealty.com/wp-content/uploads/2023/03/15-03-23-INVT-WEB-MADRID.png", clickEvent: handleShow },
-        { image: "https://pfsrealty.com/wp-content/uploads/2023/02/23-FEB-MED.png", clickEvent: handleShow },
-    ]
+
 
     return (
         <>
