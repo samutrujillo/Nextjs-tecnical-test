@@ -8,7 +8,7 @@ import {Container, Row, Col, Nav, Navbar, NavDropdown, Button} from 'react-boots
 const Header = () => {
     return (
         <>
-            <Row className='bg-light w-100' style={{position:'fixed'}}>
+            <Row className='bg-light w-100' style={{position:'fixed',zIndex:'2'}}>
                 <Col md={6} className="bg-ligth">
                     <Navbar className='' expand="lg">
                         <Image className='m-1 p-1 cursor' style={{ width: '10rem', height: 'auto' }} src={require('../../assets/images/PFS.png')}></Image>

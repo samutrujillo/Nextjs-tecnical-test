@@ -3,7 +3,9 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Container from 'react-bootstrap/Container';
 import Carousel from './carousel';
-import { Modal, Button, Row, Col } from 'react-bootstrap/';
+import { Modal, Button, Row, Col} from 'react-bootstrap/';
+import Formulario from "./formulario";
+
 
 
 const MainContent = () => {
@@ -67,16 +69,16 @@ const MainContent = () => {
                 </div>
 
                 <div className='d-flex justify-content-center alig-items-center'>
-                    <Button size='lg' style={{ background: '#a80552', border: 'none', borderRadius: '8px', width: '20%' }}>Ver más apartamentos</Button>{' '}
+                    <Button size='lg' style={{ background: '#a80552', border: 'none', borderRadius: '8px', width: '20%', fontWeight:'300' }}>Ver más apartamentos</Button>{' '}
                 </div>
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Pagina Prototipo</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Esta es una pagina Prototipo!</Modal.Body>
+                    <Modal.Body>Esta es una pagina Prototipo</Modal.Body>
                     <Modal.Footer>
-                        <Button variant="primary" onClick={handleClose}>
+                        <Button variant="secondary" onClick={handleClose}>
                             Close
                         </Button>
                     </Modal.Footer>
@@ -84,7 +86,7 @@ const MainContent = () => {
             </section>
 
             <section>
-                <div className='Container d-flex justify-content-center align-items-center my-5'>
+                <div className='d-flex justify-content-center align-items-center my-5'>
                     <h2 style={{ fontSize: '1.3rem', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '1rem', color: '#121212' }} className='mt-4'>Próximos eventos</h2>
                 </div>
 
@@ -176,9 +178,76 @@ const MainContent = () => {
                             </p>
                         </div>
                     </Col>
-                    <div style={{ marginBottom: '2rem' }} className='d-flex justify-content-center alig-items-center'>
-                        <Button size='lg' style={{ background: '#a80552', border: 'none', borderRadius: '3px', width: '12rem' }}>Ver más noticias</Button>{' '}
+                    <div style={{ marginBottom: '5rem' }} className='d-flex justify-content-center alig-items-center'>
+                        <Button size='lg' style={{ background: '#a80552', border: 'none', borderRadius: '3px', width: '12rem', fontWeight:'200' }}>Ver más noticias</Button>{' '}
                     </div>
+                </Row>
+            </section>
+
+            <section>
+                <Row>
+                    <Col md={4}>
+                        <Image style={{ height: '100%', width: '100%', marginLeft: '1rem' }} src={require('../assets/images/pfs-fondo-2.jpg')}></Image>
+                    </Col>
+
+                    <Col md={4}>
+                        <di className='d-flex justify-content-center my-5'>
+                            <Image style={{ height: '3rem', width: '10rem', marginLeft: '1rem' }} src={require('../assets/images/PFS.png')}></Image>
+                        </di>
+
+                        <di className='d-flex justify-content-center'>
+                            <Image style={{ height: '16rem', width: '28rem', marginLeft: '1rem' }} src={require('../assets/images/bg-video.webp')}></Image>
+                        </di>
+
+                        <di className='d-flex justify-content-center'>
+                        <p style={{marginTop:'2rem' ,textAlign: 'center', fontSize: '1rem', fontWeight: '200', color: '#333' }}>
+                            21 años liderando PFS Realty, contamos con un excelente talento humano: Realtors
+                            <br />
+                            <span style={{ display: 'block', textAlign: 'center' }}>y International Real Estate Advisor que puedes encontrar en todos estos países</span>
+                        </p>
+
+                        </di>
+
+                        <di className='d-flex justify-content-center my-4'>
+                        <p style={{ textAlign: 'center', fontSize: '1rem', fontWeight: '200', color: '#333' }}>
+                            EE.UU, Mexico - Colombia - Argentina - Spain - Venezuela - Ecuador - Chile - Peru -
+                            <br />
+                            <span style={{ display: 'block', textAlign: 'center' }}>Canadá - Portugal</span>
+                        </p>
+
+                        </di>
+
+                        <di className='d-flex justify-content-center'>
+                        <p style={{ textAlign: 'center', fontSize: '1rem', fontWeight: '200', color: '#333' }}>
+                        ¿Quieres recibir asesoría?
+                            <br />
+                            <span style={{ display: 'block', textAlign: 'center' }}>
+                                <a style={{textDecoration:'none', color:'#333'}}  href="mailto:info@pfsrealty.com">info@pfsrealty.com</a>
+                            </span>
+                        </p>
+
+                        </di>
+                    </Col>
+
+                    <Col md={4}>
+
+                        <h2 style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: '300', color: '#333' }} className='mt-4'>
+                            ¡Esta es su oportunidad
+                            <br />
+                            <span style={{ display: 'block', textAlign: 'center' }}>de invertir en Miami!</span>
+                        </h2>
+                        <p style={{ textAlign: 'center', fontSize: '1rem', fontWeight: '200', color: '#333' }}>
+                            Déjenos sus datos y reciba
+                            <br />
+                            <span style={{ display: 'block', textAlign: 'center' }}>asesoría personalizada</span>
+                        </p>
+
+                        <div className='d-flex justify-content-center'>   
+                            <Formulario />
+                        </div>
+
+
+                    </Col>
                 </Row>
             </section>
 
