@@ -22,9 +22,7 @@ const MainContent = () => {
         'https://pfsrealty.com/wp-content/themes/pfsrealty/img/pfsrealty-home-servicios-renta-en-dolares.png',
         'https://pfsrealty.com/wp-content/themes/pfsrealty/img/pfsrealty-home-servicios-asesoria-contable-y-legal.png'
     ]
-    const sliderClick = (event) => {
-        router.push('/info');
-    }
+    
 
     const infoSlides = [
         { image: "https://pfsrealty.com/wp-content/uploads/2023/01/Silverland-4.png", clickEvent: handleShow },
@@ -37,14 +35,17 @@ const MainContent = () => {
         { image: "https://pfsrealty.com/wp-content/uploads/2022/10/519931666283904-jpg.webp", clickEvent: handleShow }
     ]
 
-
+    const infoSlides2 = [
+        { image: "https://pfsrealty.com/wp-content/uploads/2023/03/15-03-23-INVT-WEB-MADRID.png", clickEvent: handleShow },
+        { image: "https://pfsrealty.com/wp-content/uploads/2023/02/23-FEB-MED.png", clickEvent: handleShow },
+    ]
 
     return (
         <>
 
-            <Container fluid >
-                <Image style={{ height: '40rem', width: '100%', borderRadius: '1rem' }} src={require('../assets/images/pexels-photo-1732414.jpeg')}></Image>
-            </Container>
+            
+                <Image style={{ height: '40rem', width: '100%', borderRadius: '1rem', objectFit:'cover' }} src={require('../assets/images/pexels-photo-1732414.jpeg')}></Image>
+            
             <section>
                 <div className='Container d-flex justify-content-center align-items-center my-5'>
                     <h2 style={{ fontSize: '2rem', fontWeight: '300', textTransform: 'uppercase', letterSpacing: '1rem', color: '#121212' }} className='mt-4'>Lo acompañamos durante todo el proceso</h2>

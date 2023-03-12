@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './header/header'
 import MainContent from './mainContent'
+import Footer from './footer/footer'
 
 const Homeview = () => {
   const imagesUrl = [
@@ -14,6 +15,7 @@ const Homeview = () => {
     <>
       <Header/>
       <MainContent></MainContent>
+      <Footer></Footer>
     </>
   )
 }

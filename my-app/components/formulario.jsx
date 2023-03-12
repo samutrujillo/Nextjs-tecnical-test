@@ -12,7 +12,7 @@ function Formulario() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        
+
         console.log("Formulario enviado");
     };
 
